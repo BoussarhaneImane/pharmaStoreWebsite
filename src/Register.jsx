@@ -54,6 +54,11 @@ const Register = () => {
     return (
         <>
             <div className='ALL flex flex-col'>
+            {isLoading && (
+                <div className="loading-overlay">
+                    <div className="loading-spinner"></div>
+                </div>
+            )}
                 <center className='mt-2'>
                     <Link to='/' className="text-3xl font-medium text-indigo-950">
                         retour à l'accueil

@@ -96,12 +96,12 @@ export default function Login() {
                             Vous n'avez pas encore de compte? <span style={{textDecoration:'underline solid 1px white'}} className="text-emerald-600 text-sm">inscrire ici</span>
                         </Link>
                         <button
-                            type="submit"
-                            className="button w-[65%] p-2 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 text-xs mt-4"
-                            disabled={isLoading}
-                        >
-                            Log In
-                        </button>
+                                type="submit"
+                                className="button w-[65%] p-2 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 text-xs mt-4"
+                                disabled={isLoading}
+                            >
+                                {isLoading ? 'Loading...' : 'Log In'}
+                            </button>
                     </form>
                 </div>
                 <div className="text-section flex-1 bg-white rounded-r-xl p-4 lg:w-1/2">
